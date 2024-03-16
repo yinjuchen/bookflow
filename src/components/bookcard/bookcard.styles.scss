@@ -1,0 +1,45 @@
+.bookcard-container {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  box-sizing: border-box;
+  width: calc(40% - 10px);
+  overflow-y: hidden;
+  max-width: 350px;
+  height: auto;
+  padding: 18px;
+  margin-bottom: 30px;
+  background:#fff;
+  box-shadow: 2px 4px 40px rgba(19,15,235,0.1);
+  transition: box-shadow 0.4s ease-in-out;
+    &:hover,
+    &:focus-within {
+      box-shadow: 2px 4px 40px rgba(19, 15, 235, 0.3);
+      border: 1px solid #000;
+    }
+  .book-title {
+    text-align: center;
+  }
+  img {
+    width: 180px;
+    border-radius: 15px;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+  p {
+    line-height: 1.3rem;
+  }
+  a {
+    color: black;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bookcard-container {
+    width: 100%;
+        
+    .book-title {
+        min-height: 30px
+      }
+  }
+}

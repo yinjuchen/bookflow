@@ -1,0 +1,110 @@
+:root {
+  --button-border-background: #000000;
+  --input-border-background: #000000;
+  --button-color: #fafafa;
+  --input-border--invalid: #d93838;
+  --button-hover: rgb(50, 47, 47);
+}
+
+.login-container {
+  border: 1px solid var(--button-border-background);
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 480px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 8px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+
+  label {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 30px;
+    font-weight: bold;
+  }
+
+
+  input:not([type="checkbox"]) {
+    width: 90%;
+    border: 1px solid var(--input-border-background);
+    outline: none;
+    line-height: 10px;
+    height: 36px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+  input:invalid {
+    border: 1px solid var(--input-border--invalid);
+  }
+
+  .error-message {
+    color: var(--input-border);
+  }
+
+  .signin-body-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 93%;
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    margin-top: 10px;
+
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      width: 60%;
+      margin-left: 10px;
+    } 
+
+    .checkbox {
+      width: auto;
+      height: auto;
+      margin: 10px;
+      outline: none;
+    }
+
+    span {
+      flex: 60%;
+      height: 26px; 
+    }
+    
+    a {
+      text-decoration: none;      
+    }
+  }
+    button {
+      border: 1px solid var(--button-border-background);
+      border-radius: 8px;
+      background: var(--button-border-background);
+      width: 93%;
+      color: var(--button-color);
+      height: 40px;
+      margin-top: 16px;
+      font-size: 1rem;
+      cursor: pointer;
+      &:hover {
+        background: var(--button-hover);
+      }
+    }
+}
+
+@media screen and (max-width:768px) {
+  .login-container {
+    width: 95%;
+    button:hover {
+      background: var(--button-border-background);
+      color: var(--button-color);
+      border: 1px solid var(--button-border-background);
+    }
+  }
+}

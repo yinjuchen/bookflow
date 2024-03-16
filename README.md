@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+### Introduction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In our daily lives, we often find ourselves inadvertently surrounded by a relentless press and social media, often without our consent.
 
-## Available Scripts
+Reading offers us the chance to redefine our understanding of life, strengthen our inner power, and ignite creativity through reflection.
 
-In the project directory, you can run:
+Inspired by Cal Newport's seminal work, "So Good They Can't Ignore You," the Bookflow app fosters bonding, guiding, and deeper connections with friends and family. Embrace the best version of yourself and inspire others to do the same.
 
-### `npm start`
+### Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Search Books: Utilize our easy-to-use search functionality without the need to sign in or register.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Sharing Recommendation: Fill out and send personalized book recommendations directly to a friend's email.
 
-### `npm test`
+- Personalized Bio: Express your feelings or personal reflections with a customized bio.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Sign in and Register: Gain full access to your profile, enabling you to craft bios and share book recommendations once you sign in or register.
 
-### `npm run build`
+### Security
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Secure Password: We prioritize your security by employing bcrypt to hash passwords, ensuring the safety of your account.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**FrontEnd**
 
-### `npm run eject`
+- Languages & Libraries: JavaScript, HTML, SCSS, React
+- Navigation: React-router-dom
+- External API: Google Books API
+- Icons: Fontawesome
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**BackEnd**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Server & Middleware: Node.js, Express, Cors
+- Email Delivery: Nodemailer
+- Database Management: PostgreSQL, Knex
+- Environment Management: Dotenv
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Installation/Running the App
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To embark on your Bookflow journey, follow these steps:
 
-## Learn More
+1. Clone the repository: git clone `https://github.com/yinjuchen/bookflow.git`
+2. Navigate into the project directory: cd bookflow
+3. Install dependencies: npm install
+4. Launch the app: npm start
+5. Open http://localhost:3000 in your browser and dive in!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Dive into Bookflow, where books illuminate lives. Embrace the sharing journey—one recommendation at a time.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Future Features
 
-### Code Splitting
+- Enhanced Email Service: Currently utilizing a personal account for demonstration purposes. In the future, I will transition to professional email service providers or a dedicated email domain like bookflow@noreply.com to protect user privacy and adhere to best practices.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Retrieving Recommendations: Developing functionality that allows users to view and manage their book recommendations, aiding them in keeping track of the recommendations they've shared.
 
-### Analyzing the Bundle Size
+- Profile Personalization: Enhancing user profiles with the ability to upload images, making the experience more personalized and engaging.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Remember password: Implementing a "Remember password" feature to further enhance our user's experiences, enabling quick access to their accounts without the need to re-enter their credential each time.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Forget password: Developing a "Forget Password" feature to improve our users' experiences by enabling them to easily reset their account passwords and regain access to their accounts.

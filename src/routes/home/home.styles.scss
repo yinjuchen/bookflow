@@ -1,0 +1,31 @@
+.home-container {
+
+  .share-book-text-container {
+      margin: 20px;
+      p {
+        text-align: left;
+        font-size: 1.2rem;
+      }
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    .home-search-container {
+      padding-top: 30px;
+      width: 90%;
+      margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+  .share-book-text-container {
+    p {
+      text-align: center;
+      font-size: 1.4rem;
+      line-height: 1.6;
+    }
+  }
+}
+
+

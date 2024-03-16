@@ -1,0 +1,46 @@
+:root {
+  --border: #000000;
+}
+  
+.search-bar-container {
+  height: 40px;
+  width: 40%;
+  display: flex;
+  margin: 0 auto;
+
+  .search-bar-input {
+    flex: 1;
+    border: 1px solid var(--border);
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    padding: 0 10px;
+    font-size: 1rem;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .search-button {
+    flex: 0;
+    height: 100%;
+    border: 1px solid var(--border);
+    background: white;
+    border-radius: 0 8px 8px 0;
+    padding: 0;
+  }
+
+  .fa-icon {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1;
+    padding: 12px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .search-bar-container {
+    width: 100%;
+  }
+}
