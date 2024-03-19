@@ -33,7 +33,7 @@ const RecommendationForm = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:3000/recommendation', {
+      const response = await fetch('https://bookflow-api.onrender.com/recommendation', {
         method: 'post',
         headers: {'Content-type': 'application/json'}, 
         body: JSON.stringify(submissionData)

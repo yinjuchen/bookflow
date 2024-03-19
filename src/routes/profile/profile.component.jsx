@@ -23,7 +23,7 @@ const Profile = () => {
     const bio = user.bio
     event.preventDefault()
     try {
-      const response = await fetch('http://localhost:3000/updateProfile', {
+      const response = await fetch('https://bookflow-api.onrender.com/updateProfile', {
         method: 'put',
         headers: {'Content-type':'application/json'},
         body: JSON.stringify({userid, bio}),
