@@ -4,7 +4,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const SearchBar = ({ placeholder, value, onChangeHandler, onSubmitHandler }) => {
   return (
-    <form onSubmit={onSubmitHandler} className='search-bar-container'>
+    <form onSubmit={onSubmitHandler} className={`search-bar-container search-bar`}>
       <input
         type="text"
         placeholder={placeholder}
