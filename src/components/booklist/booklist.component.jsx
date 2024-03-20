@@ -16,7 +16,7 @@ const handleSearchSubmit = async(event) => {
   event.preventDefault()
   const trimSearchField = searchField.trim()
   try {
-      const response = await fetch('http://localhost:3000/search-books', {
+      const response = await fetch('https://bookflow-api.onrender.com/search-books', {
         method: 'post',
         headers: {'Content-type': 'application/json'}, 
         body: JSON.stringify({searchQuery: trimSearchField})

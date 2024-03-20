@@ -36,7 +36,7 @@ const SignIn = () => {
         body: JSON.stringify({
         email: email, 
         password:password
-      }),
+      })
     })
       if(response.ok) {
         const data = await response.json()
