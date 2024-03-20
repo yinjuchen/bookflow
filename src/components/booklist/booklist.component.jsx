@@ -34,7 +34,7 @@ const handleSearchSubmit = async(event) => {
   return (
     <Fragment>
       <SearchBar 
-        className='search-container'
+        className='search-bar'
         placeholder='What would you like to read today'
         onChangeHandler={searchBarHandler}
         onSubmitHandler={handleSearchSubmit}
