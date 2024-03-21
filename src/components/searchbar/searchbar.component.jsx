@@ -14,7 +14,7 @@ const SearchBar = ({ placeholder, value, onChangeHandler, onSubmitHandler }) => 
         aria-label="search for books"
         />
         <button className="search-button" type="submit" aria-label="Submit search">
-          <FontAwesomeIcon icon={faSearch} className='fa-icon' />
+          <FontAwesomeIcon icon={faSearch} className='fa-icon' aria-hidden="true"/>
         </button>      
     </form>
   )
