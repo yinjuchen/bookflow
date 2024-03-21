@@ -4,10 +4,8 @@
   
 .search-bar-container {
   height: 40px;
-  width: 40%;
   display: flex;
   margin: 0 auto;
-  cursor: pointer;
 
   .search-bar-input {
     flex: 1;
@@ -44,5 +42,8 @@
 @media screen and (max-width:768px) {
   .search-bar-container {
     width: 100%;
+    .search-bar-input {
+      font-size: 0.8rem;
+    }
   }
 }

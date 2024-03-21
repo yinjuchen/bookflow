@@ -101,7 +101,11 @@
 
 @media screen and (max-width:768px) {
   .login-container {
-    width: 95%;
+     width: 100%;
+     max-width: 330px;
+     font-size: 0.8rem;
+     padding: 0 5px;
+     box-sizing: border-box;
     button:hover {
       background: var(--button-border-background);
       color: var(--button-color);

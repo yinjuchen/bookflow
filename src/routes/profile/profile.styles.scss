@@ -11,13 +11,13 @@
   flex-direction: column;
   margin: 0 auto;
   padding: 20px;
-  width: 90%;
+  width: 100%;
+  box-sizing: border-box;
 
   .profile-search-container {
     padding: 20px;
     width: 90%;
     margin: 0 auto;
-    font-size: small;
     box-sizing: border-box;
   }
 
@@ -109,11 +109,22 @@
 }
 
 @media screen and (max-width:768px) {
-  .profile-detail-container {
-    .edit-bio:hover {
-      background: var(--button-border-background);
-      color: var(--button-color);
-      border: var(--button-border-background);
+  .profile-container {
+    .profile-search-container {
+      padding: 5px;
+      width: 100%;
+      font-size: 0.8rem;
     }
-  } 
+    .welcome-message {
+      font-size: large;
+    }
+    .profile-detail-container {
+      padding-left: 0;
+      .edit-bio:hover {
+        background: var(--button-border-background);
+        color: var(--button-color);
+        border: var(--button-border-background);
+      }
+    }
+  }
 }
