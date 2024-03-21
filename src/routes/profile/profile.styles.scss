@@ -110,10 +110,17 @@
 
 @media screen and (max-width:768px) {
   .profile-container {
-    .profile-search-container {
+    padding: 10px;
+    .profile-search-container, 
+    .profile-detail-container, 
+    .profile-recommendation {
       padding: 5px;
       width: 100%;
-      font-size: 0.8rem;
+    }
+    input, .bio, button {
+      width: 100%;
+      margin: 5px 0;
+
     }
     .welcome-message {
       font-size: large;

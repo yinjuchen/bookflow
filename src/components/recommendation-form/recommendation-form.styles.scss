@@ -2,7 +2,7 @@
   --button-border-background: #000000;
   --input-border-background: #000000;
   --button-color: #fafafa;
-  --input-border--invalid: #d93838;
+  --error-message-color: #d93838;
   --button-hover: rgb(50, 47, 47);
   --message-cover: #fafafaca;
 }
@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   width: 450px;
+  max-width: 100%;
   height: 630px;
   border-radius: 8px;
   justify-content: center;
@@ -53,7 +54,7 @@
     }
 
     input:invalid, textarea:invalid{
-      border: 1px solid var(--input-border--invalid);
+      border: 1px solid var(--error-message-color);
     }
 
     .message {
@@ -105,9 +106,10 @@
     width: 100%; 
     max-width: 400px; 
     font-size: 0.8rem;
-    padding: 0 5px;
+    padding: 20px 5px;
     box-sizing: border-box;
     height: fit-content;
+    
     h2 {
       font-size: 1rem;
     }

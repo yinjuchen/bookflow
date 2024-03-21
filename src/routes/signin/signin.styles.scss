@@ -2,7 +2,7 @@
   --button-border-background: #000000;
   --input-border-background: #000000;
   --button-color: #fafafa;
-  --input-border--invalid: #d93838;
+  --error-message-color: #d93838;
   --button-hover: rgb(50, 47, 47);
 }
 
@@ -11,13 +11,12 @@
   display: flex;
   flex-direction: column;
   width: 400px;
-  height: 480px;
+  max-width: 100%;
+  height: 450px;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
   border-radius: 8px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px auto;
   box-sizing: border-box;
   overflow: hidden;
 
@@ -30,24 +29,24 @@
     font-weight: bold;
   }
 
-
   input {
     width: 90%;
     border: 1px solid var(--input-border-background);
     outline: none;
-    line-height: 10px;
+    line-height: 1.5;
     height: 36px;
     padding: 5px;
-    margin: 10px;
+    margin: 10px auto;
     border-radius: 5px;
+    font-size: 16px;
   }
 
   input:invalid {
-    border: 1px solid var(--input-border--invalid);
+    border: 1px solid var(--error-message-color);
   }
 
   .error-message {
-    color: var(--input-border);
+    color: var(--error-message-color);
   }
 
   .signin-body-container {
@@ -89,9 +88,9 @@
       background: var(--button-border-background);
       width: 93%;
       color: var(--button-color);
-      height: 40px;
+      height: 48px;
       margin-top: 16px;
-      font-size: 1rem;
+      font-size: 16px;
       cursor: pointer;
       &:hover {
         background: var(--button-hover);
@@ -101,21 +100,13 @@
 
 @media screen and (max-width:768px) {
   .login-container {
-     width: 100%;
-     max-width: 330px;
-     font-size: 0.8rem;
-     padding: 0 5px;
-     box-sizing: border-box;
+     width: 90%;
+     padding: 20px 5px;
+ 
+     label {
+      margin-left: 10px;
+     }
 
-     input {
-      font-size: 16px;
-      padding: 10px;
-      height: 48px;
-     }
-     button {
-      font-size: 16px;
-      height: 48px;
-     }
     button:hover {
       background: var(--button-border-background);
       color: var(--button-color);
