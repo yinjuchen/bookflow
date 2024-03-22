@@ -70,9 +70,14 @@
   .register-container {
     width: 90%;
     padding: 20px 5px;
+    border: none;
    
     label {
-      margin-left: 10px;
+      margin-left: 20px;
+    }
+
+    input {
+      font-size: 0.9rem;
     }
 
     button:hover {
