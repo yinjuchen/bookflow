@@ -56,6 +56,6 @@ Dive into Bookflow, where books illuminate lives. Embrace the sharing journey—
 
 - Profile Personalization: Enhancing user profiles with the ability to upload images, making the experience more personalized and engaging.
 
-- Remember password: Implementing a "Remember password" feature to further enhance our user's experiences, enabling quick access to their accounts without the need to re-enter their credential each time.
+ - Remember password: Implementing a "Remember password" feature to further enhance our user's experiences, enabling quick access to their accounts without the need to re-enter their credentials each time.
 
 - Forget password: Developing a "Forget Password" feature to improve our users' experiences by enabling them to easily reset their account passwords and regain access to their accounts.
